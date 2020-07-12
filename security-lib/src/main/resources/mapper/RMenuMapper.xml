@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jinriyouxi.security.mapper.RMenuMapper">
+
+  <select id="getMenus" resultType="com.jinriyouxi.security.domain.RMenu">
+    SELECT * FROM r_menu m,r_user_role r,r_user u,r_role_menu rm  WHERe u.id = #{userId} AND u.id = r.user_id AND r.role_id = rm.role_id AND rm.menu_id = m.id;
+  </select>
+
+</mapper>

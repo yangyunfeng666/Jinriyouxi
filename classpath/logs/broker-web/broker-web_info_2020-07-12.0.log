@@ -1,0 +1,222 @@
+2020-07-12 16:16:29,430 [main] INFO  com.jinriyouxi.server.TmsServerApplication - The following profiles are active: dev
+2020-07-12 16:16:32,644 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-12 16:16:32,650 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-07-12 16:16:32,751 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 54ms. Found 0 Redis repository interfaces.
+2020-07-12 16:16:33,736 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=208022b0-1856-3fca-8bbf-c17cbc4d5b31
+2020-07-12 16:16:34,878 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-12 16:16:34,883 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-12 16:16:34,892 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@79f90a3a' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-12 16:16:34,895 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-12 16:16:34,905 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-12 16:16:35,657 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-07-12 16:16:35,678 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-07-12 16:16:35,679 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-07-12 16:16:35,679 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-07-12 16:16:35,971 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-07-12 16:16:35,972 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 6491 ms
+2020-07-12 16:16:39,705 [main] INFO  o.s.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: e0fe4564-a37f-4ec7-a9f9-272df7829beb
+
+2020-07-12 16:16:39,887 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/webjars/**'], []
+2020-07-12 16:16:39,887 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/v2/api-docs'], []
+2020-07-12 16:16:39,888 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-resources/configuration/ui'], []
+2020-07-12 16:16:39,888 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-resources'], []
+2020-07-12 16:16:39,888 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-resources/configuration/security'], []
+2020-07-12 16:16:39,888 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-ui.html'], []
+2020-07-12 16:16:40,046 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30228de7, org.springframework.security.web.context.SecurityContextPersistenceFilter@7da77305, org.springframework.security.web.header.HeaderWriterFilter@349f3ff7, org.springframework.security.web.authentication.logout.LogoutFilter@16e07bae, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@210635fd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7a1ddbf1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@d8e4250, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@28bd5015, org.springframework.security.web.session.SessionManagementFilter@3c9f4376, org.springframework.security.web.access.ExceptionTranslationFilter@460f1cdb, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6efd0a6e]
+2020-07-12 16:16:40,085 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@e49437, org.springframework.security.web.context.SecurityContextPersistenceFilter@19647566, org.springframework.security.web.header.HeaderWriterFilter@2e40fdbd, org.springframework.security.web.csrf.CsrfFilter@1e0294a7, org.springframework.security.web.authentication.logout.LogoutFilter@17003497, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@284c4f02, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@194037f9, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7645b7d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7b79ff1c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@527d48db, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c50cd7d, org.springframework.security.web.session.SessionManagementFilter@246de37e, org.springframework.security.web.access.ExceptionTranslationFilter@15cee630, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5fbae40]
+2020-07-12 16:16:40,141 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-12 16:16:40,235 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-12 16:16:40,247 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-12 16:16:40,555 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-12 16:16:42,143 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2020-07-12 16:16:42,210 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2020-07-12 16:16:42,492 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2020-07-12 16:16:42,493 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2020-07-12 16:16:42,803 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2020-07-12 16:16:42,804 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2020-07-12 16:16:43,286 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-07-12 16:16:43,323 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2020-07-12 16:16:43,323 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2020-07-12 16:16:43,323 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2020-07-12 16:16:43,323 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2020-07-12 16:16:43,324 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2020-07-12 16:16:43,324 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2020-07-12 16:16:43,324 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2020-07-12 16:16:43,790 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2020-07-12 16:16:43,794 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2020-07-12 16:16:43,804 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-07-12 16:16:43,810 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1594541803808 with initial instances count: 1
+2020-07-12 16:16:43,823 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry - Registering application TMS-WEB-SERVER with eureka with status UP
+2020-07-12 16:16:43,825 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1594541803824, current=UP, previous=STARTING]
+2020-07-12 16:16:43,828 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_TMS-WEB-SERVER/tms-web-server:8090:server: registering service...
+2020-07-12 16:16:43,838 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-07-12 16:16:43,888 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_TMS-WEB-SERVER/tms-web-server:8090:server - registration status: 204
+2020-07-12 16:16:43,903 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-07-12 16:16:43,973 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-07-12 16:16:44,120 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-07-12 16:16:44,181 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-07-12 16:16:44,183 [main] INFO  o.s.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration - Updating port to 8090
+2020-07-12 16:16:44,194 [main] INFO  com.jinriyouxi.server.TmsServerApplication - Started TmsServerApplication in 17.529 seconds (JVM running for 19.401)
+2020-07-12 16:18:34,843 [SpringContextShutdownHook] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry - Unregistering application TMS-WEB-SERVER with eureka with status DOWN
+2020-07-12 16:18:34,844 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_TMS-WEB-SERVER/tms-web-server:8090:server: registering service...
+2020-07-12 16:18:34,859 [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-12 16:18:34,860 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_TMS-WEB-SERVER/tms-web-server:8090:server - registration status: 204
+2020-07-12 16:18:34,974 [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2020-07-12 16:18:37,979 [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
+2020-07-12 16:18:37,990 [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_TMS-WEB-SERVER/tms-web-server:8090:server - deregister  status: 200
+2020-07-12 16:18:38,027 [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2020-07-12 16:18:44,292 [main] INFO  com.jinriyouxi.server.TmsServerApplication - The following profiles are active: dev
+2020-07-12 16:18:47,884 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-12 16:18:47,898 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-07-12 16:18:48,025 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76ms. Found 0 Redis repository interfaces.
+2020-07-12 16:18:49,434 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=5c9286bc-40fa-3cd8-997e-ba194972f067
+2020-07-12 16:18:50,895 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-12 16:18:50,909 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-12 16:18:50,915 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@57e388c3' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-12 16:18:50,924 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-12 16:18:50,934 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-12 16:18:52,123 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-07-12 16:18:52,164 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-07-12 16:18:52,165 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-07-12 16:18:52,167 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-07-12 16:18:52,701 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-07-12 16:18:52,702 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 8304 ms
+2020-07-12 16:18:56,584 [main] INFO  o.s.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: d0014e3e-a3cc-4af0-884d-4541043bb125
+
+2020-07-12 16:18:56,762 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/webjars/**'], []
+2020-07-12 16:18:56,763 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/v2/api-docs'], []
+2020-07-12 16:18:56,763 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-resources/configuration/ui'], []
+2020-07-12 16:18:56,764 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-resources'], []
+2020-07-12 16:18:56,764 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-resources/configuration/security'], []
+2020-07-12 16:18:56,765 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-ui.html'], []
+2020-07-12 16:18:56,924 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ea84e01, org.springframework.security.web.context.SecurityContextPersistenceFilter@210635fd, org.springframework.security.web.header.HeaderWriterFilter@44de8e00, org.springframework.security.web.authentication.logout.LogoutFilter@6b2e9db2, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@2e40fdbd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3cb195dd, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@24615687, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a4930cf, org.springframework.security.web.session.SessionManagementFilter@4d825dbe, org.springframework.security.web.access.ExceptionTranslationFilter@780129bc, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7645b7d]
+2020-07-12 16:18:56,966 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@77cd235b, org.springframework.security.web.context.SecurityContextPersistenceFilter@3b9c9b8b, org.springframework.security.web.header.HeaderWriterFilter@fee881, org.springframework.security.web.csrf.CsrfFilter@1d2046bb, org.springframework.security.web.authentication.logout.LogoutFilter@5af38a4a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@595ec862, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@3c71cf3e, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@302da330, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7769d9b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@248d3a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3568ea59, org.springframework.security.web.session.SessionManagementFilter@1ff463bb, org.springframework.security.web.access.ExceptionTranslationFilter@fd87c22, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@69ba72da]
+2020-07-12 16:18:57,014 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-12 16:18:57,100 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-12 16:18:57,112 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-12 16:18:57,448 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-12 16:18:58,762 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2020-07-12 16:18:58,831 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2020-07-12 16:18:59,104 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2020-07-12 16:18:59,104 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2020-07-12 16:18:59,367 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2020-07-12 16:18:59,368 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2020-07-12 16:18:59,807 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-07-12 16:18:59,841 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2020-07-12 16:18:59,841 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2020-07-12 16:18:59,842 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2020-07-12 16:18:59,842 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2020-07-12 16:18:59,842 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2020-07-12 16:18:59,843 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2020-07-12 16:18:59,844 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2020-07-12 16:19:00,287 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2020-07-12 16:19:00,291 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2020-07-12 16:19:00,297 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-07-12 16:19:00,303 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1594541940301 with initial instances count: 1
+2020-07-12 16:19:00,313 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry - Registering application TMS-WEB-SERVER with eureka with status UP
+2020-07-12 16:19:00,314 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1594541940314, current=UP, previous=STARTING]
+2020-07-12 16:19:00,317 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_TMS-WEB-SERVER/tms-web-server:8090:server: registering service...
+2020-07-12 16:19:00,329 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-07-12 16:19:00,373 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_TMS-WEB-SERVER/tms-web-server:8090:server - registration status: 204
+2020-07-12 16:19:00,376 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-07-12 16:19:00,448 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-07-12 16:19:00,505 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-07-12 16:19:00,631 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-07-12 16:19:00,633 [main] INFO  o.s.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration - Updating port to 8090
+2020-07-12 16:19:00,647 [main] INFO  com.jinriyouxi.server.TmsServerApplication - Started TmsServerApplication in 19.209 seconds (JVM running for 21.288)
+2020-07-12 16:19:33,932 [http-nio-8090-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-12 16:19:33,933 [http-nio-8090-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-07-12 16:19:33,963 [http-nio-8090-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 30 ms
+2020-07-12 16:19:34,374 [http-nio-8090-exec-2] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-07-12 16:19:34,377 [http-nio-8090-exec-2] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-07-12 16:19:34,980 [http-nio-8090-exec-2] INFO  com.jinriyouxi.security.author.AuthExceptionHandler - 认证失败，禁止访问 /user/queryMenu
+2020-07-12 16:19:51,772 [http-nio-8090-exec-3] INFO  com.jinriyouxi.security.author.AuthExceptionHandler - 认证失败，禁止访问 /user/queryMenu
+2020-07-12 16:23:59,847 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-07-12 16:27:48,194 [SpringContextShutdownHook] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry - Unregistering application TMS-WEB-SERVER with eureka with status DOWN
+2020-07-12 16:27:48,195 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_TMS-WEB-SERVER/tms-web-server:8090:server: registering service...
+2020-07-12 16:27:48,216 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_TMS-WEB-SERVER/tms-web-server:8090:server - registration status: 204
+2020-07-12 16:27:48,222 [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-07-12 16:27:48,376 [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Shutting down DiscoveryClient ...
+2020-07-12 16:27:51,379 [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Unregistering ...
+2020-07-12 16:27:51,386 [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_TMS-WEB-SERVER/tms-web-server:8090:server - deregister  status: 200
+2020-07-12 16:27:51,414 [SpringContextShutdownHook] INFO  com.netflix.discovery.DiscoveryClient - Completed shut down of DiscoveryClient
+2020-07-12 16:28:04,163 [main] INFO  com.jinriyouxi.server.TmsServerApplication - The following profiles are active: dev
+2020-07-12 16:28:07,016 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-07-12 16:28:07,022 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-07-12 16:28:07,097 [main] INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 31ms. Found 0 Redis repository interfaces.
+2020-07-12 16:28:07,871 [main] INFO  org.springframework.cloud.context.scope.GenericScope - BeanFactory id=5c9286bc-40fa-3cd8-997e-ba194972f067
+2020-07-12 16:28:08,857 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-12 16:28:08,863 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-12 16:28:08,868 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4570d7b6' of type [org.springframework.security.oauth2.provider.expression.OAuth2MethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-12 16:28:08,872 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-12 16:28:08,881 [main] INFO  o.s.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-07-12 16:28:09,496 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2020-07-12 16:28:09,517 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2020-07-12 16:28:09,518 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2020-07-12 16:28:09,518 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2020-07-12 16:28:09,815 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2020-07-12 16:28:09,815 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 5536 ms
+2020-07-12 16:28:13,272 [main] INFO  o.s.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: f93a731c-e5b4-45fd-bcea-5fcc8ce03c19
+
+2020-07-12 16:28:13,447 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/webjars/**'], []
+2020-07-12 16:28:13,447 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/v2/api-docs'], []
+2020-07-12 16:28:13,448 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-resources/configuration/ui'], []
+2020-07-12 16:28:13,448 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-resources'], []
+2020-07-12 16:28:13,449 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-resources/configuration/security'], []
+2020-07-12 16:28:13,449 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: Ant [pattern='/swagger-ui.html'], []
+2020-07-12 16:28:13,579 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2fa212df, org.springframework.security.web.context.SecurityContextPersistenceFilter@59f3426f, org.springframework.security.web.header.HeaderWriterFilter@e7b0bec, org.springframework.security.web.authentication.logout.LogoutFilter@35e689a0, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@2c08c787, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6cc8adff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@333a44f2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3cf8a235, org.springframework.security.web.session.SessionManagementFilter@7d90644f, org.springframework.security.web.access.ExceptionTranslationFilter@3fc1abf, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@225e09f0]
+2020-07-12 16:28:13,620 [main] INFO  org.springframework.security.web.DefaultSecurityFilterChain - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3fe8ad3f, org.springframework.security.web.context.SecurityContextPersistenceFilter@595ec862, org.springframework.security.web.header.HeaderWriterFilter@2e1ba142, org.springframework.security.web.csrf.CsrfFilter@6e794f53, org.springframework.security.web.authentication.logout.LogoutFilter@77cd235b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5feb82b3, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@797f97e3, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7462ba4b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@63c84d31, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@102af1bb, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4b09d1c3, org.springframework.security.web.session.SessionManagementFilter@abc7005, org.springframework.security.web.access.ExceptionTranslationFilter@69ba72da, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@9bf63d2]
+2020-07-12 16:28:13,666 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-07-12 16:28:13,750 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-12 16:28:13,759 [main] INFO  com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-07-12 16:28:14,078 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2020-07-12 16:28:15,560 [main] INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2020-07-12 16:28:15,624 [main] INFO  com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2020-07-12 16:28:16,173 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2020-07-12 16:28:16,174 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2020-07-12 16:28:16,508 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2020-07-12 16:28:16,509 [main] INFO  com.netflix.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2020-07-12 16:28:17,042 [main] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-07-12 16:28:17,091 [main] INFO  com.netflix.discovery.DiscoveryClient - Disable delta property : false
+2020-07-12 16:28:17,091 [main] INFO  com.netflix.discovery.DiscoveryClient - Single vip registry refresh property : null
+2020-07-12 16:28:17,092 [main] INFO  com.netflix.discovery.DiscoveryClient - Force full registry fetch : false
+2020-07-12 16:28:17,092 [main] INFO  com.netflix.discovery.DiscoveryClient - Application is null : false
+2020-07-12 16:28:17,092 [main] INFO  com.netflix.discovery.DiscoveryClient - Registered Applications size is zero : true
+2020-07-12 16:28:17,095 [main] INFO  com.netflix.discovery.DiscoveryClient - Application version is -1: true
+2020-07-12 16:28:17,097 [main] INFO  com.netflix.discovery.DiscoveryClient - Getting all instance registry info from the eureka server
+2020-07-12 16:28:17,743 [main] INFO  com.netflix.discovery.DiscoveryClient - The response status is 200
+2020-07-12 16:28:17,748 [main] INFO  com.netflix.discovery.DiscoveryClient - Starting heartbeat executor: renew interval is: 30
+2020-07-12 16:28:17,754 [main] INFO  com.netflix.discovery.InstanceInfoReplicator - InstanceInfoReplicator onDemand update allowed rate per min is 4
+2020-07-12 16:28:17,759 [main] INFO  com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1594542497757 with initial instances count: 1
+2020-07-12 16:28:17,770 [main] INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry - Registering application TMS-SERVER with eureka with status UP
+2020-07-12 16:28:17,771 [main] INFO  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1594542497771, current=UP, previous=STARTING]
+2020-07-12 16:28:17,774 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_TMS-SERVER/tms-server:8090:server: registering service...
+2020-07-12 16:28:17,780 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2020-07-12 16:28:17,814 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2020-07-12 16:28:17,832 [DiscoveryClient-InstanceInfoReplicator-0] INFO  com.netflix.discovery.DiscoveryClient - DiscoveryClient_TMS-SERVER/tms-server:8090:server - registration status: 204
+2020-07-12 16:28:17,894 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2020-07-12 16:28:17,938 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2020-07-12 16:28:18,082 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2020-07-12 16:28:18,083 [main] INFO  o.s.cloud.netflix.eureka.serviceregistry.EurekaAutoServiceRegistration - Updating port to 8090
+2020-07-12 16:28:18,096 [main] INFO  com.jinriyouxi.server.TmsServerApplication - Started TmsServerApplication in 16.773 seconds (JVM running for 19.142)
+2020-07-12 16:31:25,945 [http-nio-8090-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-07-12 16:31:25,950 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2020-07-12 16:31:26,050 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 99 ms
+2020-07-12 16:31:26,742 [http-nio-8090-exec-1] INFO  io.lettuce.core.EpollProvider - Starting without optional epoll library
+2020-07-12 16:31:26,747 [http-nio-8090-exec-1] INFO  io.lettuce.core.KqueueProvider - Starting without optional kqueue library
+2020-07-12 16:33:17,109 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-07-12 16:38:17,112 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-07-12 16:43:17,113 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-07-12 16:48:17,115 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-07-12 16:53:17,116 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-07-12 16:58:17,119 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-07-12 17:03:17,119 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-07-12 17:08:17,122 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-07-12 17:13:17,123 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration
+2020-07-12 17:18:17,128 [AsyncResolver-bootstrap-executor-0] INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver - Resolving eureka endpoints via configuration

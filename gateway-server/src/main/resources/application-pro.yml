@@ -1,0 +1,32 @@
+
+#测试环境配置
+spring:
+  #缓存会话
+  redis:
+    host: r-wz9cnvxpbfm2ir35dh.redis.rds.aliyuncs.com
+    password: hdd2020@888
+    port: 6379
+    timeout: 10000
+    lettuce:
+      pool:
+        max-active: 100 #连接池最大连接数（使用负值表示没有限制）
+        max-idle: 100 #连接池中的最大空闲连接
+        min-idle: 50 #连接池中的最小空闲连接
+        max-wait: 6000 #连接池最大阻塞等待时间（使用负值表示没有限制）
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://api:node@node2:8762/eureka/,http://api:node@node1:8761/eureka/
+#      defaultZone: http://api:node@localhost:8761/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${server.port}:@project.name@
+    prefer-ip-address: true
+    ip-address: 127.0.0.1
+
+
+# jwt 密码
+jwt:
+  security:
+    secret: test-secret

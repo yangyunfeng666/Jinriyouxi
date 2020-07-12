@@ -1,0 +1,67 @@
+2020-07-12 16:15:59,013 [main] ERROR org.springframework.boot.SpringApplication - Application run failed
+java.lang.IllegalStateException: Failed to load property source from location 'classpath:/application-dev.yml'
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:545)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadForFileExtension(ConfigFileApplicationListener.java:483)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:464)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$null$7(ConfigFileApplicationListener.java:443)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$load$8(ConfigFileApplicationListener.java:443)
+	at java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:440)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.lambda$load$0(ConfigFileApplicationListener.java:335)
+	at org.springframework.boot.context.config.FilteredPropertySource.apply(FilteredPropertySource.java:54)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:323)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.addPropertySources(ConfigFileApplicationListener.java:214)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.postProcessEnvironment(ConfigFileApplicationListener.java:198)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEnvironmentPreparedEvent(ConfigFileApplicationListener.java:188)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener.onApplicationEvent(ConfigFileApplicationListener.java:176)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127)
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76)
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53)
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:345)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215)
+	at com.jinriyouxi.server.TmsServerApplication.main(TmsServerApplication.java:12)
+Caused by: org.yaml.snakeyaml.parser.ParserException: while parsing a block mapping
+ in 'reader', line 4, column 3:
+      redis:
+      ^
+expected <block end>, but found '<block mapping start>'
+ in 'reader', line 17, column 5:
+        username: root
+        ^
+
+	at org.yaml.snakeyaml.parser.ParserImpl$ParseBlockMappingKey.produce(ParserImpl.java:572)
+	at org.yaml.snakeyaml.parser.ParserImpl.peekEvent(ParserImpl.java:158)
+	at org.yaml.snakeyaml.parser.ParserImpl.checkEvent(ParserImpl.java:148)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:217)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.composeValueNode(Composer.java:239)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingChildren(Composer.java:230)
+	at org.yaml.snakeyaml.composer.Composer.composeMappingNode(Composer.java:218)
+	at org.yaml.snakeyaml.composer.Composer.composeNode(Composer.java:144)
+	at org.yaml.snakeyaml.composer.Composer.getNode(Composer.java:85)
+	at org.yaml.snakeyaml.constructor.BaseConstructor.getData(BaseConstructor.java:125)
+	at org.yaml.snakeyaml.Yaml$1.next(Yaml.java:548)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:160)
+	at org.springframework.beans.factory.config.YamlProcessor.process(YamlProcessor.java:134)
+	at org.springframework.boot.env.OriginTrackedYamlLoader.load(OriginTrackedYamlLoader.java:75)
+	at org.springframework.boot.env.YamlPropertySourceLoader.load(YamlPropertySourceLoader.java:50)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.loadDocuments(ConfigFileApplicationListener.java:562)
+	at org.springframework.boot.context.config.ConfigFileApplicationListener$Loader.load(ConfigFileApplicationListener.java:518)
+	... 25 common frames omitted
+2020-07-12 16:16:40,234 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-07-12 16:16:40,247 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-07-12 16:16:41,731 [main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-07-12 16:18:34,843 [SpringContextShutdownHook] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1594541914843, current=DOWN, previous=UP]
+2020-07-12 16:18:57,100 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-07-12 16:18:57,111 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-07-12 16:18:58,444 [main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.
+2020-07-12 16:27:48,195 [SpringContextShutdownHook] WARN  com.netflix.discovery.DiscoveryClient - Saw local status change event StatusChangeEvent [timestamp=1594542468194, current=DOWN, previous=UP]
+2020-07-12 16:28:13,749 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-07-12 16:28:13,758 [main] WARN  com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2020-07-12 16:28:15,168 [main] WARN  o.s.c.l.c.BlockingLoadBalancerClientAutoConfiguration$BlockingLoadBalancerClientRibbonWarnLogger - You already have RibbonLoadBalancerClient on your classpath. It will be used by default. As Spring Cloud Ribbon is in maintenance mode. We recommend switching to BlockingLoadBalancerClient instead. In order to use it, set the value of `spring.cloud.loadbalancer.ribbon.enabled` to `false` or remove spring-cloud-starter-netflix-ribbon from your project.

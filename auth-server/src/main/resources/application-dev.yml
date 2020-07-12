@@ -1,0 +1,45 @@
+#################################### common config : ####################################
+spring:
+  #缓存会话
+  redis:
+    host: localhost
+    password: xxxx
+    port: 6379
+    timeout: 10000
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1ms
+        min-idle: 0
+        max-idle: 8
+  datasource:
+    url: jdbc:mysql://localhost:3306/account?serverTimezone=GMT%2B8&characterEncoding=utf8&characterSetResults=utf8&autoReconnect=true&failOverReadOnly=false
+    # url: jdbc:mysql://localhost:3306/fbpaydb?serverTimezone=GMT%2B8&characterEncoding=utf8&characterSetResults=utf8&autoReconnect=true&failOverReadOnly=false
+    username: root
+    password: Yang!qaz@wsx
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      minimum-idle: 20
+      maximum-pool-size: 100
+      auto-commit: true
+      idle-timeout: 30000
+      pool-name: MyHikariCP
+      max-lifetime: 30000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+
+
+
+swagger:
+  enable: true
+
+eureka:
+  client:
+    service-url:
+#      defaultZone: http://api:node@node2:8762/eureka/,http://api:node@node1:8761/eureka/
+      defaultZone: http://api:node@localhost:8761/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${server.port}:@project.name@
+    prefer-ip-address: true
+    ip-address: 127.0.0.1

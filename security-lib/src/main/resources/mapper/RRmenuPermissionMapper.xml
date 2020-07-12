@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.jinriyouxi.security.mapper.RMenuPermissionMapper">
+
+  <insert id="batchInsert" parameterType="list" >
+    INSERT INTO r_menu_permission(menu_id,permission_id) VALUES
+    <foreach collection="list" separator="," item="item"  >
+      (#{item.menuId},#{item.permissionId})
+    </foreach>
+  </insert>
+</mapper>

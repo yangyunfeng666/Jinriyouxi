@@ -1,0 +1,26 @@
+
+spring:
+  #缓存会话
+  redis:
+    host: localhost
+    password: xxxx
+    port: 6379
+    timeout: 10000
+    lettuce:
+      pool:
+        max-active: 8
+        max-wait: -1ms
+        min-idle: 0
+        max-idle: 8
+
+
+eureka:
+  client:
+    service-url:
+      #      defaultZone: http://api:node@node2:8762/eureka/,http://api:node@node1:8761/eureka/
+      defaultZone: http://api:node@localhost:8761/eureka/
+  #      defaultZone: http://localhost:10000/eureka/
+  instance:
+    instance-id: ${spring.application.name}:${server.port}:@project.name@
+    prefer-ip-address: true
+    ip-address: 127.0.0.1

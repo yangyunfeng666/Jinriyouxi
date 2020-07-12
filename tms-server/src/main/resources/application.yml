@@ -1,0 +1,32 @@
+#################################### common config : ####################################
+spring:
+  application:
+    name: tms-server
+  profiles:
+    active: dev
+# 应用服务web访问端口
+server:
+  port: 8090
+
+
+
+auth_server: http://127.0.0.1:8081
+
+
+
+
+
+#MyBatis
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*.xml
+  typeAliasesPackage: com.jinriyouxi.server.domain;com.jinriyouxi.security.domain
+  type-handlers-package: com.btcpay.commons.typehandler
+  global-config:
+    id-type: 1
+    field-strategy: 2
+    db-column-underline: true
+    refresh-mapper: true
+  configuration:
+    map-underscore-to-camel-case: true
+    cache-enabled: false
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
