@@ -6,7 +6,6 @@ import com.jinriyouxi.common.constant.ResultJson;
 import com.jinriyouxi.common.exception.ResponseException;
 import javax.validation.UnexpectedTypeException;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -18,9 +17,12 @@ public class ExceptionAdvisor {
 
   @ResponseBody
   @ResponseStatus(HttpStatus.BAD_REQUEST)
-  @ExceptionHandler(IllegalArgumentException.class)
-  ResponseEntity illArgrementException(IllegalArgumentException e) {
-    return ResponseEntity.ok(e.getMessage());
+  @ExceptionHandler(RuntimeException.class)
+  public ResultJson handlerException(RuntimeException e) {
+    ResultJson resultJson = new ResultJson<>();
+    resultJson.setCode(ResultCode.FAILURE);
+    resultJson.setMsg(e.getMessage());
+    return resultJson;
   }
 
   @ResponseStatus(HttpStatus.OK)

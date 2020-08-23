@@ -24,12 +24,17 @@ public class AutherResourceServerConfig extends ResourceServerConfigurerAdapter 
 
     @Autowired
     private LoginAuthenticationFailureHandler loginAuthenticationFailureHandler;
+
+    @Autowired
+    private LogoutAuthenticationSuccessHander logoutAuthenticationSuccessHander;
+
     @Override
     public void configure(HttpSecurity http) throws Exception {
         http.cors().and().formLogin()
             .loginPage("/author/login") //配置登陆连接
                 .failureHandler(loginAuthenticationFailureHandler)
                 .successHandler(loginAuthenticationSuccessHandler)//登录成功处理器
+                .and().logout().addLogoutHandler(logoutAuthenticationSuccessHander)//退出登录
                 .and()
                 .authorizeRequests().anyRequest().authenticated().and()
                 .csrf().disable();

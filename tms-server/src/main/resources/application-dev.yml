@@ -27,10 +27,23 @@ spring:
       max-lifetime: 30000
       connection-timeout: 30000
       connection-test-query: SELECT 1
-
+  zipkin:
+    service:
+      name: tms-server
+    enable: true
+    base-url: http://localhost:9411/
+    compression:
+      enabled: true
+    sleuth:
+      sampler:
+        percentage: 0.1 #采用率
 swagger:
   enable: true
 
+org:
+  springframework:
+    cloud:
+      sleuth: debug
 eureka:
   client:
     service-url:

@@ -32,6 +32,7 @@
         <commons-cli.version>1.2</commons-cli.version>
         <commons-httpclient.version>3.1</commons-httpclient.version>
         <commons-fileupload.version>1.3.2</commons-fileupload.version>
+        <io.zipkin.java.version>2.11.12</io.zipkin.java.version>
     </properties>
 
     <modules>
@@ -41,7 +42,9 @@
         <module>security-lib</module>
         <module>commons</module>
         <module>eureka-server</module>
+        <module>zipkin-server</module>
     </modules>
+
     <dependencies>
         <dependency>
             <groupId>commons-cli</groupId>

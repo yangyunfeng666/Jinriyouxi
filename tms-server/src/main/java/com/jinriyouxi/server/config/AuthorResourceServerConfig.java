@@ -47,6 +47,7 @@ public class AuthorResourceServerConfig extends ResourceServerConfigurerAdapter 
             "/swagger-resources",//用来获取api-docs的URI
             "/swagger-resources/configuration/security",//安全选项
             "/swagger-ui.html").permitAll()
-            .and().csrf().disable().exceptionHandling().authenticationEntryPoint(new JWTAuthenticationEntryPoint());
+            .and().csrf().disable().
+             exceptionHandling().authenticationEntryPoint(new JWTAuthenticationEntryPoint());
   }
 }

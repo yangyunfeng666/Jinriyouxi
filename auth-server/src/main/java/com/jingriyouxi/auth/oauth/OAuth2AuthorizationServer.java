@@ -39,20 +39,6 @@ public class OAuth2AuthorizationServer extends AuthorizationServerConfigurerAdap
     @Autowired
     private RedisConnectionFactory redisConnectionFactory;
 
-    public DefaultTokenServices tokenService() {
-        DefaultTokenServices tokenServices = new DefaultTokenServices();
-        //配置token存储
-        tokenServices.setTokenStore(tokenStore());
-        //开启支持refresh_token，此处如果之前没有配置，启动服务后再配置重启服务，可能会导致不返回token的问题，解决方式：清除redis对应token存储
-        tokenServices.setSupportRefreshToken(true);
-        //复用refresh_token
-        tokenServices.setReuseRefreshToken(true);
-        //token有效期，设置12小时
-        tokenServices.setAccessTokenValiditySeconds(12 * 60 * 60);
-        //refresh_token有效期，设置一周
-        tokenServices.setRefreshTokenValiditySeconds(7 * 24 * 60 * 60);
-        return tokenServices;
-    }
 
     @Bean
     public TokenStore tokenStore() {
@@ -67,7 +53,6 @@ public class OAuth2AuthorizationServer extends AuthorizationServerConfigurerAdap
         endpoints
             .authenticationManager(authenticationManager)
             .tokenStore(tokenStore())
-            .tokenServices(tokenService())
             .userDetailsService(userDetailService);
         mapAuthEndpoints(endpoints);
     }

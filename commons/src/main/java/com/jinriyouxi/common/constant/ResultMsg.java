@@ -43,7 +43,10 @@ public enum ResultMsg {
         USER_EXIST_MANY("用户存在多个"),
         /** 用户错误 */
         INVALID_AUTHOR("不合法的权限"),
-
+        /**
+         * 退出成功
+         */
+        USER_LOGOUT_SUCCESS("退出成功"),
         /** 用户错误 */
         MENU_URL_EXIST("菜单url已经存在了"),
         /** 菜单不存在 */

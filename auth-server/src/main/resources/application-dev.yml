@@ -3,7 +3,7 @@ spring:
   #缓存会话
   redis:
     host: localhost
-    password: xxxx
+    password: Yang!qaz2wsx
     port: 6379
     timeout: 10000
     lettuce:
@@ -16,7 +16,7 @@ spring:
     url: jdbc:mysql://localhost:3306/account?serverTimezone=GMT%2B8&characterEncoding=utf8&characterSetResults=utf8&autoReconnect=true&failOverReadOnly=false
     # url: jdbc:mysql://localhost:3306/fbpaydb?serverTimezone=GMT%2B8&characterEncoding=utf8&characterSetResults=utf8&autoReconnect=true&failOverReadOnly=false
     username: root
-    password: Yang!qaz@wsx
+    password: Yang123456!qazwsx
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.cj.jdbc.Driver
     hikari:
